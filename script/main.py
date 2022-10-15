@@ -8,7 +8,7 @@ base_url = Config().base_url
 
 url = input("\033[94m다운로드 할 만화의 링크 : ")
 
-page, title = Page("https://marumaru303.com/bbs/cmoic/20012").get()
+page, title = Page(url).get()
 
 title = title.replace(" ", "")
 print("검색된 만화 : " + title)
